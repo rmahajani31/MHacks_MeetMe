@@ -4,12 +4,16 @@ import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
+import { Welcome } from '../pages/welcome/welcome';
+import { Login } from '../pages/login/login';
 
 @NgModule({
   declarations: [
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
+    Welcome,
+    Login,
     ListPage
   ],
   imports: [
@@ -19,6 +23,8 @@ import { ListPage } from '../pages/list/list';
   entryComponents: [
     MyApp,
     HelloIonicPage,
+    Welcome,
+    Login,
     ItemDetailsPage,
     ListPage
   ],

@@ -76123,12 +76123,6 @@ var __decorate$114 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$9 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the Suggestions page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 var Suggestions = (function () {
     function Suggestions(navCtrl, platform) {
         this.navCtrl = navCtrl;
@@ -76196,7 +76190,7 @@ var MyApp = (function () {
         this.platform = platform;
         this.menu = menu;
         // make HelloIonicPage the root (or first) page
-        this.rootPage = Dashboard;
+        this.rootPage = Welcome;
         this.initializeApp();
         // set our app's pages
         this.pages = [

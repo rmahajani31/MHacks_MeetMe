@@ -21085,9 +21085,9 @@ sub {
 }
 
 .hello-ionic-page p {
-  margin: 20px 0;
+  margin: 200px 500px;
   line-height: 22px;
-  font-size: 16px;
+  font-size: 500px;
 }
 
 .item-details-page div.selection {
@@ -21095,4 +21095,12 @@ sub {
   display: block;
   text-align: center;
   padding-top: 5%;
+}
+
+page-welcome {
+  background-color: #3399ff;
+}
+
+#WelcomeText {
+  text-align: center;
 }

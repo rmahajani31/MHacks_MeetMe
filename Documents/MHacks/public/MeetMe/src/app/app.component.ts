@@ -6,6 +6,7 @@ import { StatusBar } from 'ionic-native';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
+import { Welcome } from '../pages/welcome/welcome'
 
 
 @Component({
@@ -15,7 +16,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = HelloIonicPage;
+  rootPage: any = Welcome;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -27,7 +28,8 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'My First List', component: ListPage },
+      { title: 'Welcome', component: Welcome}
     ];
   }
 

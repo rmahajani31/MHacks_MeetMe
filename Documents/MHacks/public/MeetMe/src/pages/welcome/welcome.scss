@@ -1,15 +1,23 @@
 .page-welcome {
-  
+
 }
 
 #TitleText {
   text-align: center;
+  font-family: cursive;
+  font-size: 40px;
+  font-style: italic;
+  top: 25%;
+}
+
+#WelcomePage {
+  background-color: #9966ff;
 }
 
 #LoginButton {
     position:absolute;
     transition: all .3s ease .5s;
     top: 50%;
-    left: 25%;
+    left: 20%;
     $button-round-border-radius: 64px
 }

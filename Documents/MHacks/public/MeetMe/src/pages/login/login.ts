@@ -16,10 +16,6 @@ export class Login {
 
   constructor(public navCtrl: NavController) {}
 
-  ionViewDidLoad() {
-    console.log('Hello Login Page');
-  }
-
   goBack(){
     this.navCtrl.setRoot(Welcome);
   }

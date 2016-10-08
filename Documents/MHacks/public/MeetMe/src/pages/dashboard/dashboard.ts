@@ -14,33 +14,12 @@ import { Suggestions } from '../suggestions/suggestions';
 })
 export class Dashboard {
 	
-	searchQuery: string = '';
-	items: string[];
 
   constructor(public navCtrl: NavController)	 {
-  	this.initializeItems();
-  }
-
-  initializeItems() {
-  	this.items = [
-  		'Arwin',
-  		'Alon',
-  		'Rashabh'
-  	];
-  }
-
-  getItems(ev: any) {
-  	this.initializeItems();
-  	let val = ev.target.value;
-  	if (val && val.trim() != '') {
-  		this.items = this.items.filter((item) => {
-  			return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
-  		})
-  	}
   }
 
   getSuggestions() {
-  	this.navCtrl.setRoot(Suggestions);
+  	this.navCtrl.push(Suggestions);
   }
 
 }

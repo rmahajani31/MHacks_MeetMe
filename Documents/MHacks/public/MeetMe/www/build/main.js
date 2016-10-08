@@ -76144,12 +76144,9 @@ var Suggestions = (function () {
     Suggestions.prototype.launch = function (url) {
         window.open(url, "_system", "location=true");
     };
-    Suggestions.prototype.goToDash = function () {
-        this.navCtrl.setRoot(Dashboard);
-    };
     Suggestions = __decorate$114([
         Component({
-            selector: 'page-suggestions', template: /* ion-inline-template */ '<!--\n  Generated template for the Suggestions page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Suggestions</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n<button ion-button dark round block (click)="launch(\'https://facebook.com\')">Launch Facebook</button>\n\n<button ion-button dark round block (click)="goToDash()">Make New Suggestion</button>\n\n</ion-content>\n'
+            selector: 'page-suggestions', template: /* ion-inline-template */ '<!--\n  Generated template for the Suggestions page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Suggestions</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n<button ion-button dark round block (click)="launch(\'https://facebook.com\')">Launch Facebook</button>\n\n<button ion-button dark round block navPop>Make New Suggestion</button>\n\n</ion-content>\n'
         }), 
         __metadata$9('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object, Object])
     ], Suggestions);
@@ -76170,31 +76167,13 @@ var __metadata$8 = (undefined && undefined.__metadata) || function (k, v) {
 var Dashboard = (function () {
     function Dashboard(navCtrl) {
         this.navCtrl = navCtrl;
-        this.searchQuery = '';
-        this.initializeItems();
     }
-    Dashboard.prototype.initializeItems = function () {
-        this.items = [
-            'Arwin',
-            'Alon',
-            'Rashabh'
-        ];
-    };
-    Dashboard.prototype.getItems = function (ev) {
-        this.initializeItems();
-        var val = ev.target.value;
-        if (val && val.trim() != '') {
-            this.items = this.items.filter(function (item) {
-                return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
-            });
-        }
-    };
     Dashboard.prototype.getSuggestions = function () {
-        this.navCtrl.setRoot(Suggestions);
+        this.navCtrl.push(Suggestions);
     };
     Dashboard = __decorate$113([
         Component({
-            selector: 'page-dashboard', template: /* ion-inline-template */ '<!--\n  Generated template for the Dashboard page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Request Suggestions</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n<ion-content padding>\n	<button ion-button dark block (click)="getSuggestions()">Submit</button>\n	<p id = "TitleText">\n		Location\n	</p>\n	<ion-item>\n      	<ion-label stacked>City</ion-label>\n      	<ion-input id=\'description\' [value]=\'city\' name=\'city\' type="text">\n      	</ion-input>\n 	 </ion-item>\n 	 <ion-item>\n      	<ion-label stacked>State</ion-label>\n      	<ion-input id=\'description\' [value]=\'state\' name=\'state\' type="text">\n      	</ion-input>\n 	 </ion-item>\n 	 <p id = "TitleText">\n		Interest\n	</p>\n	<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>\n		<ion-list>\n  			<ion-item *ngFor="let item of items">\n    			{{ item }}\n    			<button ion-button dark round block (click)="Select()">Select</button>\n 			 </ion-item>\n		</ion-list>\n\n<ion-list radio-group>\n  <ion-list-header>\n    Language\n  </ion-list-header>\n <ion-item-divider light>G</ion-item-divider>\n  <ion-item>\n    <ion-label>Go</ion-label>\n    <ion-radio checked="true" value="go"></ion-radio>\n  </ion-item>\n <ion-item-divider light>R</ion-item-divider>\n  <ion-item>\n    <ion-label>Rust</ion-label>\n    <ion-radio value="rust"></ion-radio>\n  </ion-item>\n <ion-item-divider light>P</ion-item-divider>\n  <ion-item>\n    <ion-label>Python</ion-label>\n    <ion-radio value="python"></ion-radio>\n  </ion-item>\n</ion-list>\n\n</ion-content>\n'
+            selector: 'page-dashboard', template: /* ion-inline-template */ '<!--\n  Generated template for the Dashboard page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Request Suggestions</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n<ion-content padding>\n	<button ion-button dark block (click)="getSuggestions()">Submit</button>\n	<p id = "TitleText">\n		Location\n	</p>\n	<ion-item>\n      	<ion-label stacked>City</ion-label>\n      	<ion-input id=\'description\' [value]=\'city\' name=\'city\' type="text">\n      	</ion-input>\n 	 </ion-item>\n 	 <ion-item>\n      	<ion-label stacked>State</ion-label>\n      	<ion-input id=\'description\' [value]=\'state\' name=\'state\' type="text">\n      	</ion-input>\n 	 </ion-item>\n 	 <p id = "TitleText">\n		Interest\n	</p>\n<ion-list radio-group>\n  <ion-list-header>\n    Language\n  </ion-list-header>\n <ion-item-divider light>G</ion-item-divider>\n  <ion-item>\n    <ion-label>Go</ion-label>\n    <ion-radio checked="true" value="go"></ion-radio>\n  </ion-item>\n <ion-item-divider light>R</ion-item-divider>\n  <ion-item>\n    <ion-label>Rust</ion-label>\n    <ion-radio value="rust"></ion-radio>\n  </ion-item>\n <ion-item-divider light>P</ion-item-divider>\n  <ion-item>\n    <ion-label>Python</ion-label>\n    <ion-radio value="python"></ion-radio>\n  </ion-item>\n</ion-list>\n\n</ion-content>\n'
         }), 
         __metadata$8('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
     ], Dashboard);

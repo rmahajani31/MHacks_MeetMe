@@ -27,8 +27,4 @@ export class Suggestions {
   		window.open(url,"_system", "location=true");
   }
 
-  goToDash() {
-  	this.navCtrl.setRoot(Dashboard);
-  }
-
 }

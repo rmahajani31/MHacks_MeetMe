@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Login } from '../login/login';
+import { cordovaAppVersion } from 'ng-cordova';
 
 /*
   Generated class for the Welcome page.

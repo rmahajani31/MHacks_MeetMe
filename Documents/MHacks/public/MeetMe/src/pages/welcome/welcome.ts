@@ -22,12 +22,11 @@ export class Welcome {
 
         console.log(success);
         access = Facebook.getAccessToken();
-
+        if (access.getLoginStatus()) {
+          this.navCtrl.setRoot(Dashboard);
+        }
       }, function(error){
           console.log(error);
       });
-      if (access.getLoginStatus()) {
-        this.navCtrl.setRoot(Dashboard);
-      }
     }
 }

@@ -76069,22 +76069,16 @@ var __decorate$112 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$7 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the Login page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 var Login = (function () {
     function Login(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    Login.prototype.ionViewDidLoad = function () {
-        console.log('Hello Login Page');
+    Login.prototype.goBack = function () {
+        this.navCtrl.setRoot(Welcome);
     };
     Login = __decorate$112([
         Component({
-            selector: 'page-login', template: /* ion-inline-template */ '<!--\n  Generated template for the Login page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n   <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'
+            selector: 'page-login', template: /* ion-inline-template */ '<!--\n  Generated template for the Login page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n   <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <button ion-button dark block (click)="goBack()">Cancel</button>\n\n</ion-content>\n'
         }), 
         __metadata$7('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
     ], Login);
@@ -76102,6 +76096,12 @@ var __decorate$111 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/*
+  Generated class for the Welcome page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
 var Welcome = (function () {
     function Welcome(navCtrl) {
         this.navCtrl = navCtrl;
@@ -76111,11 +76111,7 @@ var Welcome = (function () {
     };
     Welcome = __decorate$111([
         Component({
-<<<<<<< HEAD
-            selector: 'page-welcome', template: /* ion-inline-template */ '<!--\n  Generated template for the Welcome page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  \n  <ion-navbar>\n    <ion-title id = "WelcomeText">Welcome</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n	<p id = "TitleText">\n		MEETME\n	</p>\n	<button ion-button dark block (click)="goToLogin()" id = "LoginButton">Login with Facebook</button>\n</ion-content>\n'
-=======
-            selector: 'page-welcome', template: /* ion-inline-template */ '<!--\n  Generated template for the Welcome page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title id = "WelcomeText">Welcome</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n	<p>\n		MEETME\n	</p>\n	<button ion-button dark block (click)="openLogin()">Get Started</button>\n</ion-content>\n'
->>>>>>> 4aa749e29947db3d9714128669915e1a24050ee0
+            selector: 'page-welcome', template: /* ion-inline-template */ '<!--\n  Generated template for the Welcome page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title id = "WelcomeText">Welcome</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n	<p id = "TitleText">\n		MEETME\n	</p>\n	<button ion-button dark round (click)="openLogin()" id = "LoginButton">Login With Facebook</button>\n</ion-content>\n'
         }), 
         __metadata$6('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
     ], Welcome);

@@ -1,5 +1,5 @@
 .page-welcome {
-  background-color: #3399ff;
+  
 }
 
 #TitleText {
@@ -10,5 +10,6 @@
     position:absolute;
     transition: all .3s ease .5s;
     top: 50%;
-    left: 5%;
+    left: 25%;
+    $button-round-border-radius: 64px
 }

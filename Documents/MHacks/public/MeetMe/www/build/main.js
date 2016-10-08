@@ -76111,7 +76111,11 @@ var Welcome = (function () {
     };
     Welcome = __decorate$111([
         Component({
+<<<<<<< HEAD
+            selector: 'page-welcome', template: /* ion-inline-template */ '<!--\n  Generated template for the Welcome page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  \n  <ion-navbar>\n    <ion-title id = "WelcomeText">Welcome</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n	<p id = "TitleText">\n		MEETME\n	</p>\n	<button ion-button dark block (click)="goToLogin()" id = "LoginButton">Login with Facebook</button>\n</ion-content>\n'
+=======
             selector: 'page-welcome', template: /* ion-inline-template */ '<!--\n  Generated template for the Welcome page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title id = "WelcomeText">Welcome</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n	<p>\n		MEETME\n	</p>\n	<button ion-button dark block (click)="openLogin()">Get Started</button>\n</ion-content>\n'
+>>>>>>> 4aa749e29947db3d9714128669915e1a24050ee0
         }), 
         __metadata$6('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
     ], Welcome);

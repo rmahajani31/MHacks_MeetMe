@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Welcome } from '../welcome/welcome'
 
 /*
   Generated class for the Login page.
@@ -15,8 +16,8 @@ export class Login {
 
   constructor(public navCtrl: NavController) {}
 
-  ionViewDidLoad() {
-    console.log('Hello Login Page');
+  goBack(){
+    this.navCtrl.setRoot(Welcome);
   }
 
 }

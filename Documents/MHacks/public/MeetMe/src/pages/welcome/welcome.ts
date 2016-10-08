@@ -23,7 +23,7 @@ export class Welcome {
 
         console.log(success);
         access = Facebook.getAccessToken();
-        if (access.getLoginStatus()) {
+        if (access.getLoginStatus().status === 'connected') {
           this.navCtrl.setRoot(Dashboard);
         }
       }, function(error){

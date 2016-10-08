@@ -8,29 +8,26 @@
     },
     "installed_plugins": {
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.meetme993400"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.meetme993400"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.meetme993400"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.meetme993400"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.meetme993400"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.ionicframework.meetme993400"
         },
-        "phonegap-facebook-plugin": {
+        "com.phonegap.plugins.facebookconnect": {
             "APP_ID": "1784810258398481",
             "APP_NAME": "MeetMe",
-            "PACKAGE_NAME": "io.ionic.starter"
-        },
-        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.ionicframework.meetme993400"
         }
     },

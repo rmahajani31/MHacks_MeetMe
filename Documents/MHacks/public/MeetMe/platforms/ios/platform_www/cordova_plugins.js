@@ -1,48 +1,48 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
         "id": "cordova-plugin-console.console",
+        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
         "pluginId": "cordova-plugin-console",
         "clobbers": [
             "console"
         ]
     },
     {
-        "file": "plugins/cordova-plugin-console/www/logger.js",
         "id": "cordova-plugin-console.logger",
+        "file": "plugins/cordova-plugin-console/www/logger.js",
         "pluginId": "cordova-plugin-console",
         "clobbers": [
             "cordova.logger"
         ]
     },
     {
-        "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
+        "file": "plugins/cordova-plugin-device/www/device.js",
         "pluginId": "cordova-plugin-device",
         "clobbers": [
             "device"
         ]
     },
     {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
         "id": "cordova-plugin-splashscreen.SplashScreen",
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
         "pluginId": "cordova-plugin-splashscreen",
         "clobbers": [
             "navigator.splashscreen"
         ]
     },
     {
-        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
         "id": "cordova-plugin-statusbar.statusbar",
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
         "pluginId": "cordova-plugin-statusbar",
         "clobbers": [
             "window.StatusBar"
         ]
     },
     {
-        "file": "plugins/ionic-plugin-keyboard/www/ios/keyboard.js",
         "id": "ionic-plugin-keyboard.keyboard",
+        "file": "plugins/ionic-plugin-keyboard/www/ios/keyboard.js",
         "pluginId": "ionic-plugin-keyboard",
         "clobbers": [
             "cordova.plugins.Keyboard"
@@ -50,20 +50,11 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/phonegap-facebook-plugin/facebookConnectPlugin.js",
-        "id": "phonegap-facebook-plugin.FacebookConnectPlugin",
-        "pluginId": "phonegap-facebook-plugin",
+        "id": "com.phonegap.plugins.facebookconnect.FacebookConnectPlugin",
+        "file": "plugins/com.phonegap.plugins.facebookconnect/www/facebook-native.js",
+        "pluginId": "com.phonegap.plugins.facebookconnect",
         "clobbers": [
             "facebookConnectPlugin"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
         ]
     }
 ];
@@ -76,8 +67,7 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.0",
     "cordova-plugin-whitelist": "1.3.0",
     "ionic-plugin-keyboard": "2.2.1",
-    "phonegap-facebook-plugin": "0.12.0",
-    "cordova-plugin-inappbrowser": "1.5.0"
-}
+    "com.phonegap.plugins.facebookconnect": "1.7.1.3"
+};
 // BOTTOM OF METADATA
 });

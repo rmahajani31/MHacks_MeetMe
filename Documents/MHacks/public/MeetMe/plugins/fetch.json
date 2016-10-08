@@ -47,17 +47,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "phonegap-facebook-plugin": {
-        "source": {
-            "type": "local",
-            "path": "/Users/chitramahajani/Documents/phonegap-facebook-plugin"
-        },
-        "is_top_level": true,
-        "variables": {
-            "APP_ID": "1784810258398481",
-            "APP_NAME": "MeetMe"
-        }
-    },
     "cordova-plugin-inappbrowser": {
         "source": {
             "type": "registry",
@@ -65,5 +54,16 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "com.phonegap.plugins.facebookconnect": {
+        "source": {
+            "type": "local",
+            "path": "/Users/chitramahajani/Facebook"
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "1784810258398481",
+            "APP_NAME": "MeetMe"
+        }
     }
 }

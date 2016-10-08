@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { login } from 'ng-cordova';
+import { login } from 'ng-cordova.plugins.facebook';
 
 /*
   Generated class for the Welcome page.
@@ -19,7 +19,7 @@ export class Welcome {
 
 
    openLogin() {
-   login(["public_profile", "email"]).then(function(success){
+   $cordovaFacebook.login(["public_profile", "email"]).then(function(success){
 
    console.log(success);
 

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {Page, Platform} from 'ionic-angular';
+import { Dashboard } from '../dashboard/dashboard';
 
 /*
   Generated class for the Suggestions page.
@@ -13,10 +15,20 @@ import { NavController } from 'ionic-angular';
 })
 export class Suggestions {
 
-  constructor(public navCtrl: NavController) {}
+	static get parameters() {
+		return [[Platform]];
+	}
 
-  ionViewDidLoad() {
-    console.log('Hello Suggestions Page');
+  constructor(public navCtrl: NavController, platform) {
+  	this.platform = platform;
+  }
+
+  launch(url) {
+  		window.open(url,"_system", "location=true");
+  }
+
+  goToDash() {
+  	this.navCtrl.setRoot(Dashboard);
   }
 
 }

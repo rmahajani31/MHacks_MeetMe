@@ -57,5 +57,13 @@
             "APP_ID": "1784810258398481",
             "APP_NAME": "MeetMe"
         }
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser@1.5.0"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

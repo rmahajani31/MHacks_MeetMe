@@ -29,6 +29,9 @@
             "APP_ID": "1784810258398481",
             "APP_NAME": "MeetMe",
             "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.meetme993400"
         }
     },
     "dependent_plugins": {}

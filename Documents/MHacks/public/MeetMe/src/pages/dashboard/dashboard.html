@@ -37,7 +37,29 @@
 		<ion-list>
   			<ion-item *ngFor="let item of items">
     			{{ item }}
+    			<button ion-button dark round block (click)="Select()">Select</button>
  			 </ion-item>
 		</ion-list>
+
+<ion-list radio-group>
+  <ion-list-header>
+    Language
+  </ion-list-header>
+ <ion-item-divider light>G</ion-item-divider>
+  <ion-item>
+    <ion-label>Go</ion-label>
+    <ion-radio checked="true" value="go"></ion-radio>
+  </ion-item>
+ <ion-item-divider light>R</ion-item-divider>
+  <ion-item>
+    <ion-label>Rust</ion-label>
+    <ion-radio value="rust"></ion-radio>
+  </ion-item>
+ <ion-item-divider light>P</ion-item-divider>
+  <ion-item>
+    <ion-label>Python</ion-label>
+    <ion-radio value="python"></ion-radio>
+  </ion-item>
+</ion-list>
 
 </ion-content>

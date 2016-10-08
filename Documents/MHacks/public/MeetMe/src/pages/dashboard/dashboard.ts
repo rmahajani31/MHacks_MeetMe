@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Suggestions } from '../suggestions/suggestions';
 
 /*
   Generated class for the Dashboard page.
@@ -39,7 +40,7 @@ export class Dashboard {
   }
 
   getSuggestions() {
-
+  	this.navCtrl.setRoot(Suggestions);
   }
 
 }

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Login } from '../login/login';
-import { cordovaAppVersion } from 'ng-cordova';
+import { login } from 'ng-cordova';
 
 /*
   Generated class for the Welcome page.
@@ -17,8 +16,16 @@ export class Welcome {
 
   constructor(public navCtrl: NavController) {}
 
-   openLogin(){
-    this.navCtrl.setRoot(Login);
+
+
+   openLogin() {
+   login(["public_profile", "email"]).then(function(success){
+
+   console.log(success);
+
+ }, function(error){
+   console.log(error);
+ });
   }
 
 }

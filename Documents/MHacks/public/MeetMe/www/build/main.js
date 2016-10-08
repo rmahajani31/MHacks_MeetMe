@@ -76069,6 +76069,12 @@ var __decorate$112 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$7 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/*
+  Generated class for the Login page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
 var Login = (function () {
     function Login(navCtrl) {
         this.navCtrl = navCtrl;
@@ -76078,7 +76084,7 @@ var Login = (function () {
     };
     Login = __decorate$112([
         Component({
-            selector: 'page-login', template: /* ion-inline-template */ '<!--\n  Generated template for the Login page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n   <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <button ion-button dark block (click)="goBack()">Cancel</button>\n\n</ion-content>\n'
+            selector: 'page-login', template: /* ion-inline-template */ '<!--\n  Generated template for the Login page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n   <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title id = "LoginText">Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n  <ion-item>\n    <ion-label color="primary">Username</ion-label>\n    <ion-input placeholder="Text Input"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary" fixed>Fixed Label</ion-label>\n    <ion-input type="tel" placeholder="Tel Input"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-input type="number" placeholder="Number Input with no label"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary" stacked>Stacked Label</ion-label>\n    <ion-input type="email" placeholder="Email Input"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary" stacked>Stacked Label</ion-label>\n    <ion-input type="password" placeholder="Password Input"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label color="primary" floating>Floating Label</ion-label>\n    <ion-input></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-input placeholder="Clear Input" clearInput></ion-input>\n  </ion-item>\n</ion-list>\n\n\n  <button ion-button dark fab-bottom (click)="goBack()" id = "CancelButton">Cancel</button>\n\n</ion-content>\n'
         }), 
         __metadata$7('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
     ], Login);
@@ -76105,7 +76111,7 @@ var Welcome = (function () {
     };
     Welcome = __decorate$111([
         Component({
-            selector: 'page-welcome', template: /* ion-inline-template */ '<!--\n  Generated template for the Welcome page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title id = "WelcomeText">Welcome</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n	<p id = "TitleText">\n		MEETME\n	</p>\n	<button ion-button dark round (click)="openLogin()" id = "LoginButton">Login With Facebook</button>\n</ion-content>\n'
+            selector: 'page-welcome', template: /* ion-inline-template */ '<!--\n  Generated template for the Welcome page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title id = "WelcomeText">Welcome</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding id = "WelcomePage">\n	<p id = "TitleText">\n		MEETME\n	</p>\n	<button ion-button dark round (click)="openLogin()" id = "LoginButton">Login With Facebook</button>\n</ion-content>\n'
         }), 
         __metadata$6('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
     ], Welcome);

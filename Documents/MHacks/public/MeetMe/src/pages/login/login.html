@@ -10,14 +10,49 @@
    <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Login</ion-title>
+    <ion-title id = "LoginText">Login</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list>
+  <ion-item>
+    <ion-label color="primary">Username</ion-label>
+    <ion-input placeholder="Text Input"></ion-input>
+  </ion-item>
 
-  <button ion-button dark block (click)="goBack()">Cancel</button>
+  <ion-item>
+    <ion-label color="primary" fixed>Fixed Label</ion-label>
+    <ion-input type="tel" placeholder="Tel Input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="number" placeholder="Number Input with no label"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" stacked>Stacked Label</ion-label>
+    <ion-input type="email" placeholder="Email Input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" stacked>Stacked Label</ion-label>
+    <ion-input type="password" placeholder="Password Input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Floating Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="Clear Input" clearInput></ion-input>
+  </ion-item>
+</ion-list>
+
+
+  <button ion-button dark fab-bottom (click)="goBack()" id = "CancelButton">Cancel</button>
 
 </ion-content>

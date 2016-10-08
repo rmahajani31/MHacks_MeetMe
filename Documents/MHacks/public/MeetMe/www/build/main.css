@@ -21097,13 +21097,32 @@ sub {
   padding-top: 5%;
 }
 
+#LoginText {
+  text-align: center;
+}
+
+#CancelButton {
+  position: absolute;
+  transition: all .3s ease .5s;
+  top: 40%;
+  left: 40%;
+}
+
 #TitleText {
   text-align: center;
+  font-family: cursive;
+  font-size: 40px;
+  font-style: italic;
+  top: 25%;
+}
+
+#WelcomePage {
+  background-color: #9966ff;
 }
 
 #LoginButton {
   position: absolute;
   transition: all .3s ease .5s;
   top: 50%;
-  left: 25%;
+  left: 20%;
 }

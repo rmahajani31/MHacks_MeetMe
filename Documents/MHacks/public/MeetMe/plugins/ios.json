@@ -24,6 +24,11 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "phonegap-facebook-plugin": {
+            "APP_ID": "1784810258398481",
+            "APP_NAME": "MeetMe",
+            "PACKAGE_NAME": "io.ionic.starter"
         }
     },
     "dependent_plugins": {}

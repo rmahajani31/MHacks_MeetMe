@@ -21097,6 +21097,17 @@ sub {
   padding-top: 5%;
 }
 
+#LoginText {
+  text-align: center;
+}
+
+#CancelButton {
+  position: absolute;
+  transition: all .3s ease .5s;
+  top: 40%;
+  left: 40%;
+}
+
 #TitleText {
   text-align: center;
   font-family: cursive;

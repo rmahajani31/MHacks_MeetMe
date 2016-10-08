@@ -13,8 +13,31 @@
 </ion-header>
 
 
-<ion-content padding>
-<button ion-button dark block (click)="getSuggestions()">Submit</button>
 
+
+<ion-content padding>
+	<button ion-button dark block (click)="getSuggestions()">Submit</button>
+	<p id = "TitleText">
+		Location
+	</p>
+	<ion-item>
+      	<ion-label stacked>City</ion-label>
+      	<ion-input id='description' [value]='city' name='city' type="text">
+      	</ion-input>
+ 	 </ion-item>
+ 	 <ion-item>
+      	<ion-label stacked>State</ion-label>
+      	<ion-input id='description' [value]='state' name='state' type="text">
+      	</ion-input>
+ 	 </ion-item>
+ 	 <p id = "TitleText">
+		Interest
+	</p>
+	<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+		<ion-list>
+  			<ion-item *ngFor="let item of items">
+    			{{ item }}
+ 			 </ion-item>
+		</ion-list>
 
 </ion-content>

@@ -8,6 +8,8 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
 import { Welcome } from '../pages/welcome/welcome';
 import { Login } from '../pages/login/login';
+import { Dashboard } from '../pages/dashboard/dashboard';
+import { Suggestions } from '../pages/suggestions/suggestions';
 
 
 @Component({
@@ -17,7 +19,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = Welcome;
+  rootPage: any = Dashboard;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -31,7 +33,9 @@ export class MyApp {
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
       { title: 'Welcome', component: Welcome},
-      { title: 'Login', component: Login}
+      { title: 'Login', component: Login},
+      { title: 'Dashboard', component: Dashboard},
+      { title: 'Suggestions', component: Suggestions}
     ];
   }
 

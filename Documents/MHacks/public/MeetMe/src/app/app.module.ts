@@ -6,6 +6,8 @@ import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { Welcome } from '../pages/welcome/welcome';
 import { Login } from '../pages/login/login';
+import { Dashboard } from '../pages/dashboard/dashboard';
+import { Suggestions } from '../pages/suggestions/suggestions';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { Login } from '../pages/login/login';
     ItemDetailsPage,
     Welcome,
     Login,
+    Dashboard,
+    Suggestions,
     ListPage
   ],
   imports: [
@@ -25,6 +29,8 @@ import { Login } from '../pages/login/login';
     HelloIonicPage,
     Welcome,
     Login,
+    Dashboard,
+    Suggestions,
     ItemDetailsPage,
     ListPage
   ],

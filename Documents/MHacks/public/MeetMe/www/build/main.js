@@ -76096,12 +76096,6 @@ var __decorate$111 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the Welcome page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 var Welcome = (function () {
     function Welcome(navCtrl) {
         this.navCtrl = navCtrl;
@@ -76120,6 +76114,83 @@ var Welcome = (function () {
 }());
 
 /* ion-compiler */
+var __decorate$113 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$8 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the Dashboard page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Dashboard = (function () {
+    function Dashboard(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.searchQuery = '';
+        this.initializeItems();
+    }
+    Dashboard.prototype.initializeItems = function () {
+        this.items = [
+            'Arwin',
+            'Alon',
+            'Rashabh'
+        ];
+    };
+    Dashboard.prototype.getItems = function (ev) {
+        this.initializeItems();
+        var val = ev.target.value;
+        if (val && val.trim() != '') {
+            this.items = this.items.filter(function (item) {
+                return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+            });
+        }
+    };
+    Dashboard.prototype.getSuggestions = function () {
+    };
+    Dashboard = __decorate$113([
+        Component({
+            selector: 'page-dashboard', template: /* ion-inline-template */ '<!--\n  Generated template for the Dashboard page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Request Suggestions</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n<ion-content padding>\n\n<ion-item>\n  <ion-label>Gender</ion-label>\n  <ion-select [(ngModel)]="gender">\n  	<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>\n  	<ion-list>\n  		<ion-item *ngFor="let item of items">\n    		{{ item }}\n 		 </ion-item>\n 	</ion-list>\n	<ion-option value="f" selected="true">Female</ion-option>\n	<ion-option value="m">Male</ion-option>\n 	</ion-select>\n</ion-item>\n\n	<button ion-button dark block (click)="getSuggestions()">Submit</button>\n	<p id = "TitleText">\n		Location\n	</p>\n	<ion-item>\n      	<ion-label stacked>City</ion-label>\n      	<ion-input id=\'description\' [value]=\'city\' name=\'city\' type="text">\n      	</ion-input>\n 	 </ion-item>\n 	 <ion-item>\n      	<ion-label stacked>State</ion-label>\n      	<ion-input id=\'description\' [value]=\'state\' name=\'state\' type="text">\n      	</ion-input>\n 	 </ion-item>\n 	 <p id = "TitleText">\n		Interest\n	</p>\n	<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>\n		<ion-list>\n  			<ion-item *ngFor="let item of items">\n    			{{ item }}\n 			 </ion-item>\n		</ion-list>\n\n</ion-content>\n'
+        }), 
+        __metadata$8('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
+    ], Dashboard);
+    return Dashboard;
+    var _a;
+}());
+
+/* ion-compiler */
+var __decorate$114 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$9 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Suggestions = (function () {
+    function Suggestions(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Suggestions.prototype.ionViewDidLoad = function () {
+        console.log('Hello Suggestions Page');
+    };
+    Suggestions = __decorate$114([
+        Component({
+            selector: 'page-suggestions', template: /* ion-inline-template */ '<!--\n  Generated template for the Suggestions page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Suggestions</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'
+        }), 
+        __metadata$9('design:paramtypes', [(typeof (_a = typeof NavController !== 'undefined' && NavController) === 'function' && _a) || Object])
+    ], Suggestions);
+    return Suggestions;
+    var _a;
+}());
+
+/* ion-compiler */
 var __decorate$1 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -76134,14 +76205,16 @@ var MyApp = (function () {
         this.platform = platform;
         this.menu = menu;
         // make HelloIonicPage the root (or first) page
-        this.rootPage = Welcome;
+        this.rootPage = Dashboard;
         this.initializeApp();
         // set our app's pages
         this.pages = [
             { title: 'Hello Ionic', component: HelloIonicPage },
             { title: 'My First List', component: ListPage },
             { title: 'Welcome', component: Welcome },
-            { title: 'Login', component: Login }
+            { title: 'Login', component: Login },
+            { title: 'Dashboard', component: Dashboard },
+            { title: 'Suggestions', component: Suggestions }
         ];
     }
     MyApp.prototype.initializeApp = function () {
@@ -76191,6 +76264,8 @@ var AppModule = (function () {
                 ItemDetailsPage,
                 Welcome,
                 Login,
+                Dashboard,
+                Suggestions,
                 ListPage
             ],
             imports: [
@@ -76202,6 +76277,8 @@ var AppModule = (function () {
                 HelloIonicPage,
                 Welcome,
                 Login,
+                Dashboard,
+                Suggestions,
                 ItemDetailsPage,
                 ListPage
             ],

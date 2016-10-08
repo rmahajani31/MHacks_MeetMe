@@ -22,14 +22,11 @@ export class Welcome {
       Facebook.login(["public_profile", "email"]).then(function(success){
 
         console.log(success);
-        access = Facebook.getAccessToken();
+        this.navCtrl.setRoot(Dashboard);
 
       }, function(error){
           console.log(error);
       });
-      if (access.getLoginStatus()) {
-        this.navCtrl.setRoot(Dashboard);
-      }
     }
 
 }

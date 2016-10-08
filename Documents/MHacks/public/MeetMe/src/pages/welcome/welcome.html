@@ -4,9 +4,8 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<link rel="stylesheet" href="welcome.css" media="screen" title="no title">
 <ion-header>
-
+  
   <ion-navbar>
     <ion-title id = "WelcomeText">Welcome</ion-title>
   </ion-navbar>
@@ -14,8 +13,8 @@
 </ion-header>
 
 <ion-content padding>
-	<p>
+	<p id = "TitleText">
 		MEETME
 	</p>
-	<button ion-button dark block (click)="goToLogin()">Get Started</button>
+	<button ion-button dark block (click)="goToLogin()" id = "LoginButton">Login with Facebook</button>
 </ion-content>

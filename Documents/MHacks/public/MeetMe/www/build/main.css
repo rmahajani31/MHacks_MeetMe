@@ -21097,10 +21097,17 @@ sub {
   padding-top: 5%;
 }
 
-page-welcome {
+.page-welcome {
   background-color: #3399ff;
 }
 
-#WelcomeText {
+#TitleText {
   text-align: center;
+}
+
+#LoginButton {
+  position: absolute;
+  transition: all .3s ease .5s;
+  top: 50%;
+  left: 5%;
 }

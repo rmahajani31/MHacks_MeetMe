@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Facebook } from 'ionic-native';
-import { Dashboard } from 'ionic-dashboard';
+import { Dashboard } from '../dashboard/dashboard';
 
 /*
   Generated class for the Welcome page.
@@ -18,10 +18,9 @@ export class Welcome {
   constructor(public navCtrl: NavController) {}
 
     openLogin() {
-      String access = "";
+      this.navCtrl.push(Dashboard);
       Facebook.login(["public_profile", "email"]).then(function(success){
         console.log(success);
-        this.navCtrl.setRoot(Dashboard);
       }, function(error){
           console.log(error);
       });

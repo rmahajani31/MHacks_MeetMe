@@ -19,9 +19,7 @@ export class Welcome {
 
     openLogin() {
       Facebook.login(["public_profile", "email"]).then(function(success){
-
         console.log(success);
-
       }, function(error){
           console.log(error);
       });

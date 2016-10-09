@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Facebook } from 'ionic-native';
-import { Dashboard } from 'ionic-dashboard';
+import { Dashboard } from '../dashboard/dashboard';
 
 /*
   Generated class for the Welcome page.

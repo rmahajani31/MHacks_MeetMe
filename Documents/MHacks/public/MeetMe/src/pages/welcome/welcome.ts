@@ -26,6 +26,6 @@ export class Welcome {
     }
 
     goToDash() {
-      this.navCtrl.setRoot(Dashboard);
+      this.navCtrl.push(Dashboard);
     }
 }

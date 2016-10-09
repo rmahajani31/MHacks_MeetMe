@@ -14,6 +14,14 @@
   background-color: #9966ff;
 }
 
+#DashButton {
+    position:absolute;
+    transition: all .3s ease .5s;
+    top: 60%;
+    left: 30%;
+    $button-round-border-radius: 64px
+}
+
 #LoginButton {
     position:absolute;
     transition: all .3s ease .5s;

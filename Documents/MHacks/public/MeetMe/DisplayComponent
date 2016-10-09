@@ -1,0 +1,9 @@
+export class DisplayComponent implements OnInit {
+  constructor(public element: ElementRef) {
+   this.element.nativeElement // <- your direct element reference
+ }
+ ngOnInit() {
+   var el = this.element.nativeElement;
+   console.log(el);
+ }
+}

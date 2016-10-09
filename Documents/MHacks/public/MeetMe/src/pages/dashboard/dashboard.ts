@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Suggestions } from '../suggestions/suggestions';
+import { FormBuilder, Validators } from '@angular/common';
 
 /*
   Generated class for the Dashboard page.
@@ -12,14 +13,14 @@ import { Suggestions } from '../suggestions/suggestions';
   selector: 'page-dashboard',
   templateUrl: 'dashboard.html'
 })
-export class Dashboard {
-	
 
+export class Dashboard {
   constructor(public navCtrl: NavController)	 {
+
   }
 
   getSuggestions() {
-  	this.navCtrl.push(Suggestions);
+  	this.navCtrl.push(Suggestions, {myTeam : this.team});
   }
 
 }

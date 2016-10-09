@@ -20,12 +20,12 @@
  	 <p id = "TitleText">
 		Interest
 	</p>
-<ion-list radio-group>
+<ion-list radio-group [(ngModel)]="team">
   <ion-list-header id = "SportsTeams">
     Sports Teams
   </ion-list-header>
  <ion-item-divider light id = "Football">Football</ion-item-divider>
-  <ion-item id = "BroncosButton">
+  <ion-item id = "BroncosButton" >
     <ion-label id = "Broncos">Broncos</ion-label>
     <ion-radio checked="true" value="broncos"></ion-radio>
   </ion-item>
@@ -44,6 +44,7 @@
     <ion-label id = "Warriors">Golden State Warriors</ion-label>
     <ion-radio value="warriors"></ion-radio>
   </ion-item>
+  <button type="submit"></button>
 </ion-list>
 
 </ion-content>

@@ -20,12 +20,8 @@ export class Welcome {
     openLogin() {
       String access = "";
       Facebook.login(["public_profile", "email"]).then(function(success){
-
         console.log(success);
-        access = Facebook.getAccessToken();
-        if (access.getLoginStatus().status === 'connected') {
-          this.navCtrl.setRoot(Dashboard);
-        }
+        this.navCtrl.setRoot(Dashboard);
       }, function(error){
           console.log(error);
       });

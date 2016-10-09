@@ -17,40 +17,32 @@
 
 <ion-content padding>
 	<button ion-button dark block (click)="getSuggestions()">Submit</button>
-	<p id = "TitleText">
-		Location
-	</p>
-	<ion-item>
-      	<ion-label stacked>City</ion-label>
-      	<ion-input id='description' [value]='city' name='city' type="text">
-      	</ion-input>
- 	 </ion-item>
- 	 <ion-item>
-      	<ion-label stacked>State</ion-label>
-      	<ion-input id='description' [value]='state' name='state' type="text">
-      	</ion-input>
- 	 </ion-item>
  	 <p id = "TitleText">
 		Interest
 	</p>
 <ion-list radio-group>
   <ion-list-header>
-    Language
+    Sports Teams
   </ion-list-header>
- <ion-item-divider light>G</ion-item-divider>
+ <ion-item-divider light>Football</ion-item-divider>
   <ion-item>
-    <ion-label>Go</ion-label>
-    <ion-radio checked="true" value="go"></ion-radio>
+    <ion-label>Broncos</ion-label>
+    <ion-radio checked="true" value="broncos"></ion-radio>
   </ion-item>
- <ion-item-divider light>R</ion-item-divider>
+ <ion-item-divider light>Soccer</ion-item-divider>
   <ion-item>
-    <ion-label>Rust</ion-label>
-    <ion-radio value="rust"></ion-radio>
+    <ion-label>Barcelona</ion-label>
+    <ion-radio value="barcelona"></ion-radio>
   </ion-item>
- <ion-item-divider light>P</ion-item-divider>
+ <ion-item-divider light>Baseball</ion-item-divider>
   <ion-item>
-    <ion-label>Python</ion-label>
-    <ion-radio value="python"></ion-radio>
+    <ion-label>Yankees</ion-label>
+    <ion-radio value="yankees"></ion-radio>
+  </ion-item>
+  <ion-item-divider light>Basketball</ion-item-divider>
+  <ion-item>
+    <ion-label>Golden State Warriors</ion-label>
+    <ion-radio value="warriors"></ion-radio>
   </ion-item>
 </ion-list>
 

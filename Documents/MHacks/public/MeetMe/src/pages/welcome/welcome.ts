@@ -18,14 +18,16 @@ export class Welcome {
   constructor(public navCtrl: NavController) {}
 
     openLogin() {
-      String access = "";
       Facebook.login(["public_profile", "email"]).then(function(success){
 
         console.log(success);
-        this.navCtrl.setRoot(Dashboard);
 
       }, function(error){
           console.log(error);
       });
+    }
+
+    goToDash() {
+      this.navCtrl.setRoot(Dashboard);
     }
 }

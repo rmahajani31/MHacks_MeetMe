@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit} from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams} from 'ionic-angular';
 import { Suggestions } from '../suggestions/suggestions';
 import { FormBuilder, Validators } from '@angular/common';
 
@@ -13,14 +13,12 @@ import { FormBuilder, Validators } from '@angular/common';
   selector: 'page-dashboard',
   templateUrl: 'dashboard.html'
 })
-
 export class Dashboard {
-  constructor(public navCtrl: NavController)	 {
 
+  constructor(public navCtrl: NavController)	 {
   }
 
   getSuggestions() {
-  	this.navCtrl.push(Suggestions, {myTeam : this.team});
+  	this.navCtrl.push(Suggestions);
   }
-
 }
